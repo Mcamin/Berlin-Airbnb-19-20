@@ -1,4 +1,4 @@
-# A closer look into the data of Berlin’s Airbnb market in 2019
+# A closer look into the data of Berlin’s Airbnb market in 2020
 
 
 ### Table of Contents
@@ -6,6 +6,7 @@
 1. [The Libraries That I Have Used](#libraries)
 2. [My Project Motivation](#motivation)
 3. [File Descriptions](#files)
+4. [Summary Of The Results](#results)
 5. [Acknowledgements](#acknowledgements)
 
 ## The Libraries That I Have Used <a name="libraries"></a>
@@ -44,7 +45,17 @@ It contains 3 files:
 - calendar.csv: calendar availability of listings and price
 - listings.csv: information about all the available listings
 - reviews.csv: listing reviews by the users
+##Summary Of The Results <a name="results"></a>
+The following key findings from the analysis are summarized below:
 
+1. It was found that the peak season in Berlin is in September.
+2. The "Forst Grunewald" neighborhood was the priciest neighborhood in Berlin, followed by Volkspark Wilmersdorf. Neu-Hohenschönhausen Süd was the cheapest.
+3. Looking further at neighborhoods and property types, I found out that Apartments in Volkspark Wilmersdorf are the most expensive followed by the apartments in Alexanderplatz and condominium in Regierungsviertel.
+4. With the help of SentimentIntensityAnalyzer, I was able to map the reviews to their respective sentiments of positive, negative or neutral. I found out that 71.5% of reviews were mostly positive, with 13.3% negative reviews and 15.2% of reviews that were neutral.
+By exploring review sentiments by neighborhoods, I found out that südliche Luisenstadt, Reuterstraße, and nördliche Luisenstadt were the neighborhoods with the most positive reviews, while Altstadt-Kietz, Hellersdorf-Ost and Hakenfelde ranked lower.
+By exploring the worst reviews, I found out that SentimentIntensityAnalyzer associate some good reviews written in german with negative sentiments.
+Using LinearRegression, I was able to predict price based on a prepped and cleaned dataset, with an r2score of -1.33 on the training dataset and -4.29  on the test datasets.
+It was found that the features that had the most impact on price were a combination of host details as well as descriptive information about the listing.
 
 ## Acknowledgements<a name="acknowledgements"></a>
 
