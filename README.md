@@ -52,10 +52,10 @@ The following key findings from the analysis are summarized below:
 2. The "Forst Grunewald" neighborhood was the priciest neighborhood in Berlin, followed by Volkspark Wilmersdorf. Neu-Hohenschönhausen Süd was the cheapest.
 3. Looking further at neighborhoods and property types, I found out that Apartments in Volkspark Wilmersdorf are the most expensive followed by the apartments in Alexanderplatz and condominium in Regierungsviertel.
 4. With the help of SentimentIntensityAnalyzer, I was able to map the reviews to their respective sentiments of positive, negative or neutral. I found out that 71.5% of reviews were mostly positive, with 13.3% negative reviews and 15.2% of reviews that were neutral.
-By exploring review sentiments by neighborhoods, I found out that südliche Luisenstadt, Reuterstraße, and nördliche Luisenstadt were the neighborhoods with the most positive reviews, while Altstadt-Kietz, Hellersdorf-Ost and Hakenfelde ranked lower.
-By exploring the worst reviews, I found out that SentimentIntensityAnalyzer associate some good reviews written in german with negative sentiments.
-Using LinearRegression, I was able to predict price based on a prepped and cleaned dataset, with an r2score of -1.33 on the training dataset and -4.29  on the test datasets.
-It was found that the features that had the most impact on price were a combination of host details as well as descriptive information about the listing.
+5. By exploring review sentiments by neighborhoods, I found out that südliche Luisenstadt, Reuterstraße, and nördliche Luisenstadt were the neighborhoods with the most positive reviews, while Altstadt-Kietz, Hellersdorf-Ost and Hakenfelde ranked lower.
+6. By exploring the worst reviews, I found out that SentimentIntensityAnalyzer associate some good reviews written in german with negative sentiments.
+7. Using LinearRegression, I was able to predict price based on a prepped and cleaned dataset, with an r2score of -1.33 on the training dataset and -4.29  on the test datasets.
+8. It was found that the features that had the most impact on price were a combination of host details as well as descriptive information about the listing.
 
 ## Acknowledgements<a name="acknowledgements"></a>
 
